@@ -7,6 +7,7 @@
                 <ul class="right hide-on-med-and-down">
                     <li><RouterLink to="/">Home</RouterLink></li>
                     <li><RouterLink to="/about">About</RouterLink></li>
+                    <li><RouterLink to="/proyectos" class="waves-effect waves-light btn">Proyectos</RouterLink></li>
                 </ul>
             </div>
         </nav>
@@ -14,6 +15,7 @@
         <ul class="sidenav" id="mobile-demo">
             <li><RouterLink to="/">Home</RouterLink></li>
             <li><RouterLink to="/about">About</RouterLink></li>
+            <li><RouterLink to="/proyectos">Proyectos</RouterLink></li>
         </ul>
     </div>
 </template>
