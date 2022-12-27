@@ -1,15 +1,14 @@
 <template>
-    <div>
+    <div class="container">
         <h1>Proyectos</h1>
+        <Contenedor />
     </div>
 </template>
 
 <script>
-export default {
-    setup () {
-        
+import Contenedor from '../components/Contenedor.vue';
 
-        return {}
-    }
+export default {
+    components: { Contenedor }
 }
 </script>
