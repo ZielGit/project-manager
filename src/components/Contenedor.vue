@@ -1,28 +1,15 @@
 <template>
     <div class="row">
         <div class="col s12 m7">
-            <div class="card horizontal">
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <span class="card-title">Proyecto 1</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
-                    <div class="row card-action">
-                        <a class="col s6 waves-effect waves-light btn"><i class="material-icons">create</i></a>
-                        <a class="col s6 waves-effect waves-light btn"><i class="material-icons">delete</i></a>
-                    </div>
-                </div>
-            </div>
+            <CardProject />
         </div>
     </div>
 </template>
 
 <script>
-export default {
-    setup () {
-        
+import CardProject from './CardProject.vue';
 
-        return {}
-    }
+export default {
+    components: { CardProject }
 }
 </script>
