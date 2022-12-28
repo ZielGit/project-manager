@@ -8,8 +8,8 @@
                         <p>I am a very simple card. I am good at containing small bits of information.</p>
                     </div>
                     <div class="row card-action">
-                        <a class="col s6 waves-effect waves-light btn">Editar</a>
-                        <a class="col s6 waves-effect waves-light btn">Eliminar</a>
+                        <a class="col s6 waves-effect waves-light btn"><i class="material-icons">create</i></a>
+                        <a class="col s6 waves-effect waves-light btn"><i class="material-icons">delete</i></a>
                     </div>
                 </div>
             </div>
