@@ -10,6 +10,20 @@
 import CardProject from './CardProject.vue';
 
 export default {
-    components: { CardProject }
+    data: () => ({
+        projects: null,
+    }),
+    components: { CardProject },
+    mounted(){
+        this.getProjects();
+    },
+    methods: {
+        async getProjects() {
+            const res = await fetch("https://crud-vue-420f8-default-rtdb.firebaseio.com/projects/project.json")
+            const data = await res.json()
+
+            console.log(data);
+        },
+    }
 }
 </script>
