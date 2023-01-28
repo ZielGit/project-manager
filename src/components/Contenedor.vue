@@ -19,11 +19,13 @@ export default {
     },
     methods: {
         async getProjects() {
-            const res = await fetch("https://crud-vue-420f8-default-rtdb.firebaseio.com/projects.json")
-            const data = await res.json()
-            this.projects = data;
+            const res = await fetch("https://crud-vue-420f8-default-rtdb.firebaseio.com/projects.json");
+            const data = await res.json();
 
-            console.log(data);
+            for(let i in data) {
+                this.projects.push(data[i]);
+            }
+            console.log(this.projects);
         },
     }
 }
