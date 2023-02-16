@@ -1,10 +1,11 @@
 <template>
     <div class="row">
         <div class="col s12 m7">
-            <CardProject 
+            <card-project 
                 v-for="(project, i) in projects"
                 :key="i" 
                 :data="project"
+                :v-if="project.data.status"
             />
         </div>
     </div>
@@ -27,7 +28,10 @@ export default {
             const data = await res.json();
 
             for(let i in data) {
-                this.projects.push(data[i]);
+                this.projects.push({
+                    id: i,
+                    data: data[i]
+                });
             }
             // console.log(this.projects);
         },
